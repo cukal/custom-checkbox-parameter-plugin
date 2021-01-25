@@ -8,7 +8,7 @@
 		<div name="parameter" id="${it.divId}" style="white-space:nowrap;font-size:1.2em;" >
 			<input type="hidden" name="name" value="${it.name}" />
 		<label style='padding:0 0 0 10px'><input type="checkbox" name="all_checkbox" value="checkall" class="checkbox-all"/>${%parameter.selectAll} </label>
-			<hr>
+			<hr></hr>
 			<div id="checkbox_div" style="width:auto;"/>
 			<div id="result_message"/>
 		</div>
