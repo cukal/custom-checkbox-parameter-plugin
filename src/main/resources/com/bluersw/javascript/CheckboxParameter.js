@@ -9,9 +9,10 @@ function initializationCheckbox(parentDiv,requestBasicUrl,parameterName){
 				url: checkbox_request,
 				contentType: "application/json; charset=utf-8",
 				success: function(result){
+
 				for(i=0;i<result.list.length;i++){
-					checkboxDiv.append("<label style='padding:0 0 0 10px'><input type='checkbox' " + result.list[i].checked + " name='checkbox_" + result.list[i].value  + "'>" + result.list[i].name + "</input></label><br>");
-				}
+						checkboxDiv.append("<label style='padding:0 0 0 10px'><input type='checkbox' " + " name='checkbox_" + result.list[i].value  + "'>" + result.list[i].name + "</input></label><br>");
+					}
 					messageD.text(result.message);
 				}});
 
